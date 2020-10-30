@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App</title>
-    <link rel="shortcut icon" href="./images/todo-favicon.png" type="image/x-icon">
-</head>
-<body>
-    
-</body>
+
+<html>
+    <head>
+        <title>Todos-Application</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">To-do App</h1>
+                <h2 class="header__subtitle">What do you need to do?</h2>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <div class="actions__container">
+                <input id="newTodo" type="text" class="input" placeholder="Filter todos">
+                <label class="checkbox">
+                    <input type="checkbox" id="status">Hide Completed
+                </label>
+            </div>
+        </div>
+
+        <div class="container">
+         <div id="searchDisplay"></div>
+            <form id="name-form">
+                <input type="text" class="input" placeholder="Enter your todo" name="firstName">
+                <button class="button">Submit</button>
+            </form>
+        </div>
+        <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+        <script src="todos-practice.js"></script>
+    </body>
 </html>
